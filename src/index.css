@@ -5,24 +5,42 @@
 
 :root {
     --red: #af4c2f;
-    --brown: #c9934b;
+    --orange-accent: #ff4d00;
+    --purple-background: #06040f;
     --black: #000000;
+    --black-shade: #666666;
+    --white: #e8e7eb;
 }
 
 body {
-    background-color: var(--brown);
+    background-color: var(--purple-background);
 }
 
 html {
     font-size: 62.5%;
     font-family: 'encode-sans';
-    color: var(--black);
+    cursor: url("/public/cursor.png"), auto;
+}
+
+input {
+    all: unset;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+a, 
+button, 
+input[type="button"], 
+input[type="submit"], 
+input[type="reset"], 
+select, 
+label,
+[role="button"] {
+  cursor: url('/public/pointer.png'), pointer !important;
 }
 
 h1 {
