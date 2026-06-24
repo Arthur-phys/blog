@@ -1,0 +1,13 @@
+{
+    "slug": "welcome",
+    "post": {
+        "title": "Welcome to my page!",
+        "sections": [
+            {
+                "title": "It is still under construction, though",
+                "text": "But it is a little better",
+                "image": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "slug": {
+        "type": "string"
+    },
+    "post": {
+        "type": {
+            "title": {
+                "type" : "string"
+            },
+            "sections": {
+                "type": "array",
+                "element": {
+                    "type": {
+                        "title": {
+                            "type": "string"
+                        },
+                        "text": {
+                            "type": "string"
+                        },
+                        "image": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
