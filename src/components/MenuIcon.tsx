@@ -1,4 +1,4 @@
-export default function MenuIcon({size, padding}: {size: string, padding: string}) {
+export default function MenuIcon({size, padding, stroke}: {size: string, padding: string, stroke: string}) {
   return (
     <>
       <svg
@@ -9,7 +9,7 @@ export default function MenuIcon({size, padding}: {size: string, padding: string
 	      width={size}
         height={size}
       >
-	<path d="M80 160h352M80 256h352M80 352h352" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32px"/>
+	<path d="M80 160h352M80 256h352M80 352h352" fill="none" stroke={stroke} strokeLinecap="round" strokeMiterlimit="10" strokeWidth="32px"/>
       </svg>
     </>
   );

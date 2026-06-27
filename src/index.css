@@ -44,17 +44,21 @@ label,
 }
 
 h1 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 5rem;
 }
 
 h2 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 4rem;
 }
 
+li {
+    list-style: none;
+}
+
 h3 {
-    font-weigh: 400;
+    font-weight: 500;
     font-size: 3rem;
 }
 
