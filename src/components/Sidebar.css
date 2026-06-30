@@ -1,6 +1,6 @@
 .sidebar {
     width: 25rem;
-    height: 100vh;
+    height: 100%;
     display: flex;
     position: fixed;
     z-index: 1;
@@ -20,11 +20,12 @@
 
 .sidebar-icon {
     display: flex;
-    height: 100vh;
+    height: 100%;
     justify-content: center;
     cursor: pointer;
     order: 1;
 }
+
 
 .sidebar-content {
     flex: 1;
@@ -82,4 +83,38 @@
     gap: 1rem;
     justify-content: center;
     align-items: center;
+}
+
+@media(max-width: 480px) {
+    .mobile-icon {
+        height: 6rem !important;
+        background-color: var(--white);
+        border-radius: 5px;
+        align-items: center;
+        position: relative;
+        margin-top: 5rem;
+    }
+    
+    .mobile-icon::after {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        top: -1.7rem;
+        left: 1rem;
+        background: linear-gradient(to top right, var(--white) 49.5%, rgba(0, 0, 0, 0) 50.5%);
+    }
+    .mobile-icon::before {
+        content: "";
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        bottom: -1.7rem;
+        left: 1rem;
+        background: linear-gradient(to bottom right, var(--white) 50%, rgba(0, 0, 0, 0) 50%);
+    }
+    .mobile-sidebar {
+    width: 21rem !important;
+    height: 100%;
+    }
 }

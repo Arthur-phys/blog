@@ -33,9 +33,9 @@ export default function Sidebar({latestPosts}: {latestPosts: string[]}) {
 
   return (
     <>
-    <div className={"sidebar" + (visible ? " sidebar-visible" : "")} ref={sidebar}>   
-      <div ref={rightSidebar} className="sidebar-icon">
-        <MenuIcon size="5rem" padding='1rem' stroke='var(--black)'/>
+    <div className={"sidebar mobile-sidebar" + (visible ? " sidebar-visible" : "")} ref={sidebar}>   
+      <div ref={rightSidebar} className="mobile-icon sidebar-icon">
+        <MenuIcon stroke='var(--black)'/>
       </div>
       <div className="sidebar-content">
         <p className="sidebar-title">Menu</p>

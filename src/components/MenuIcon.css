@@ -1,0 +1,14 @@
+.menuicon {
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+}
+
+@media (max-width: 480px) {
+    .menuicon-mobile {
+        padding: 0.8rem !important;
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+}
+
