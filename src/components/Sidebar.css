@@ -5,7 +5,7 @@
     display: flex;
     position: fixed;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     background-color: var(--white);
     left: -20rem;
     transition: left 0.5s ease-in-out;
@@ -90,7 +90,7 @@
     .mobile-icon {
         height: 6rem !important;
         background-color: var(--white);
-        border-radius: 5px;
+        border-radius: 0 5px 5px 0;
         align-items: center;
         position: relative;
         margin-top: 5rem;
