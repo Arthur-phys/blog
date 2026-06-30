@@ -6,7 +6,7 @@ import type { PostDetails } from '../interfaces/post'
 export default function Post(content: PostDetails) {
     return (
         <>
-            <div>
+            <div className='post-content'>
                 <h1>{content.title}</h1>
                 {
                     content.sections.map(s => (

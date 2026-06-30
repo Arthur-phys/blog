@@ -24,7 +24,7 @@ function App() {
       <div className="page">
         <Sidebar latestPosts={["Welcome to my page!"]}/>
         <div className='content'>
-          <Post title={content ? content.post.title : "Upss!!"} sections={content ? content.post.sections : []}/>
+          <Post title={content ? content.post.title : "Upss!! I did not find that ( ˶°ㅁ°) !!"} sections={content ? content.post.sections : []}/>
         </div>
       </div>
     </>

@@ -13,3 +13,37 @@ h2 {
 p {
      text-align: justify;
 }
+
+.post-content {
+    margin: 0 20rem;
+}
+
+@media (max-width: 1200px) {
+    .post-content {
+        margin: 0 15rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .post-content {
+        margin: 0 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-content {
+        margin: 0 8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .post-content {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-content {
+        margin: 0;
+    }
+}
