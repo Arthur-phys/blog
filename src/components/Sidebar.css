@@ -1,6 +1,7 @@
 .sidebar {
     width: 25rem;
-    height: 100%;
+    top: 0;
+    bottom: 0;
     display: flex;
     position: fixed;
     z-index: 1;
@@ -97,24 +98,25 @@
     
     .mobile-icon::after {
         content: "";
-        width: 2rem;
-        height: 2rem;
+        width: 3.5rem;
+        height: 3rem;
         position: absolute;
-        top: -1.7rem;
-        left: 1rem;
+        top: -2.7rem;
+        left: 0rem;
         background: linear-gradient(to top right, var(--white) 49.5%, rgba(0, 0, 0, 0) 50.5%);
     }
     .mobile-icon::before {
         content: "";
-        width: 2rem;
-        height: 2rem;
+        width: 3.5rem;
+        height: 3rem;
         position: absolute;
-        bottom: -1.7rem;
-        left: 1rem;
+        bottom: -2.7rem;
+        left: 0rem;
         background: linear-gradient(to bottom right, var(--white) 50%, rgba(0, 0, 0, 0) 50%);
     }
+    
     .mobile-sidebar {
-    width: 21rem !important;
+    width: 20rem !important;
     height: 100%;
     }
 }
