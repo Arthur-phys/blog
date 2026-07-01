@@ -1,8 +1,19 @@
-import type { PostObject } from "../interfaces/post";
+import type { PostIndex, PostObject } from "../interfaces/post";
 
 export async function PostService(postSlugName: string): Promise<PostObject> {
-    let response = await fetch(`/posts/${postSlugName}/${postSlugName}.json`)
-    let postContent: PostObject = await response.json()
+    let postContent: PostObject;
+    try {
+        const response = await fetch(`/posts/${postSlugName}/${postSlugName}.json`)
+        postContent = await response.json();
+    } catch (e) {
+        const response = await fetch(`/posts/not-found/not-found.json`)
+        postContent = await response.json();
+    }
     return postContent
+}
+
+export async function LatestPostsService(): Promise<PostIndex> {
+    const response = await fetch(`/posts/latest.json`);
+    return await response.json();
 }
 

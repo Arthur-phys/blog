@@ -75,16 +75,6 @@
     width: 18rem;
 }
 
-.post-title {
-    list-style: none;
-}
-
-.latest-post {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-}
 
 @media(max-width: 480px) {
     .mobile-icon {

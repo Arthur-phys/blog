@@ -1,0 +1,15 @@
+.latest-post {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.5rem;
+    border: 5px solid #00000000;
+    border-radius: 5px;
+    transition: border-color 0.15s;
+}
+
+.latest-post:hover {
+    border-color: var(--purple-shade);
+}

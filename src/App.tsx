@@ -10,11 +10,10 @@ function App() {
   return (
     <>
       <div className="page">
-        <Sidebar latestPosts={["Welcome to my page!"]}/>
+        <Sidebar/>
         <div className='content'>
           <Routes>
-            <Route index element={<Post post="welcome"/>}/>
-            <Route path='posts/:postName' element={<Post/>}/>
+            <Route index element={<Post/>}/>
           </Routes>
         </div>
       </div>

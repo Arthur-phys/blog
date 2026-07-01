@@ -1,25 +1,30 @@
 import './Post.css'
 import type { PostObject } from '../interfaces/post'
-import { useParams } from 'react-router'
+import { useSearchParams } from 'react-router'
 import { useEffect, useState } from 'react';
 import { PostService } from '../services/postService';
 
-// "Upss!! I did not find that ( ˶°ㅁ°) !!"
+export default function Post() {
 
-export default function Post(optionalPostName: {post?: string}) {
-
-    const params = useParams<{postName: string}>();
+    const [searchParams] = useSearchParams();
     let [content, setContent] = useState<PostObject>();
 
     useEffect(() => {
-        const postToRetrieve = optionalPostName.post ? optionalPostName.post : params.postName;
+        let postToRetrieve: string;
+        const postParam = searchParams.get("post");
+        if (postParam == null || postParam == "") {
+            postToRetrieve = "welcome";
+        } else {
+            postToRetrieve = postParam
+        }
+
         const getContent = async () => {
-            const postContent = PostService(postToRetrieve? postToRetrieve : "");
+            const postContent = PostService(postToRetrieve);
             const data = await postContent;
             setContent(data);
         }
         getContent();
-    },[]);
+    },[searchParams]);
 
     return (
         <>

@@ -4,12 +4,12 @@
 }
 
 :root {
-    --red: #af4c2f;
-    --orange-accent: #ff4d00;
-    --purple-background: #06040f;
+    --deep-purple: #2c114f;
+    --purple-background: #06040a;
     --black: #000000;
     --black-shade: #666666;
-    --white: #e8e7eb;
+    --purple-shade: #8a8790;
+    --white: #e8e7e9;
 }
 
 body {

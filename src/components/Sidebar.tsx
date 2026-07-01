@@ -1,9 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import MenuIcon from './MenuIcon.tsx'
 import './Sidebar.css'
-import FileIcon from './FileIcon.tsx';
+import LatestPosts from './LatestPosts.tsx';
 
-export default function Sidebar({latestPosts}: {latestPosts: string[]}) {
+export default function Sidebar() {
 
   const [visible, setVisible] = useState(false);
   const sidebar = useRef<HTMLDivElement>(null);
@@ -44,18 +44,7 @@ export default function Sidebar({latestPosts}: {latestPosts: string[]}) {
         </div>
         <div className='category'>
           <h3 className='category-title'>Latest (っᵔ◡ᵔ)っ</h3>
-          <ul>
-            {
-              latestPosts.map((post, i) => (
-                  <li key={i}>
-                    <div className='latest-post'>
-                      <FileIcon size='1.5rem' padding='0' stroke='var(--black)'/>{post}
-                    </div>
-                  </li>
-                )
-              )
-            }
-          </ul>
+          <LatestPosts/>
         </div>
         <div className='category'>
           <h3 className='category-title'>About me ₍^. .^₎Ⳋ </h3>

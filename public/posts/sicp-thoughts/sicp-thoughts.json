@@ -1,0 +1,13 @@
+{
+    "slug": "sicp-thoughts",
+    "post": {
+        "title": "Thoughts About the Famous CS Book SICP",
+        "sections": [
+            {
+                "title": "Background",
+                "text": "some background",
+                "image": ""
+            }
+        ]
+    }
+}

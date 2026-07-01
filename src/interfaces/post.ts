@@ -13,3 +13,10 @@ export interface PostObject {
     slug: string,
     post: PostDetails
 }
+
+export interface PostOverview {
+    slug: string,
+    name: string,    
+}
+
+export type PostIndex = Array<PostOverview>;
