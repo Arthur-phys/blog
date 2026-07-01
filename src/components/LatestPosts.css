@@ -12,4 +12,5 @@
 
 .latest-post:hover {
     border-color: var(--purple-shade);
+    cursor: url("/public/pointer.png"), pointer !important;
 }
