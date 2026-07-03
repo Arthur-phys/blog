@@ -17,3 +17,7 @@ export async function LatestPostsService(): Promise<PostIndex> {
     return await response.json();
 }
 
+export async function IndexService(): Promise<PostIndex> {
+    const response = await fetch(`/posts/index.json`);
+    return await response.json();
+}

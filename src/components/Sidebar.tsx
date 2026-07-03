@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import MenuIcon from './MenuIcon.tsx'
 import './Sidebar.css'
 import LatestPosts from './LatestPosts.tsx';
+import SearchBar from './SearchBar.tsx';
 
 export default function Sidebar() {
 
@@ -40,7 +41,7 @@ export default function Sidebar() {
       <div className="sidebar-content">
         <p className="sidebar-title">Menu</p>
         <div className='category'>
-          <input className='search-bar' placeholder='Search Posts' type="text"></input>
+          <SearchBar/>
         </div>
         <div className='category'>
           <h3 className='category-title'>Latest (っᵔ◡ᵔ)っ</h3>

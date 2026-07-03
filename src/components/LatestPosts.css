@@ -28,7 +28,7 @@
 .hover-blue-shade-light:hover {
     border-color: var(--blue-shade-light);
 }
-.hover.deep-blue-shade-light:hover {
+.hover-deep-blue-shade-light:hover {
     border-color: var(--deep-blue-shade-light);
 }
 .hover-purple-shade-light:hover {
