@@ -2,7 +2,7 @@
     "slug": "welcome",
     "post": {
         "title": "Welcome to my Blog!",
-        "keywords": ["welcome", "life", "me","cats"],
+        "keywords": ["welcome","life","me","cats","hobbies"],
         "sections": [
             {
                 "title": "Who Am I?",

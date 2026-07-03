@@ -11,6 +11,29 @@
 }
 
 .latest-post:hover {
-    border-color: var(--purple-shade);
-    cursor: url("/public/pointer.png"), pointer !important;
+    cursor: url("/pointer.png"), pointer !important;
+}
+.hover-red-shade-light:hover {
+    border-color: var(--red-shade-light);
+}
+.hover-orange-shade-light:hover {
+    border-color: var(--orange-shade-light);
+}
+.hover-yellow-shade-light:hover {
+    border-color: var(--yellow-shade-light);
+}
+.hover-green-shade-light:hover {
+    border-color: var(--green-shade-light);
+}
+.hover-blue-shade-light:hover {
+    border-color: var(--blue-shade-light);
+}
+.hover.deep-blue-shade-light:hover {
+    border-color: var(--deep-blue-shade-light);
+}
+.hover-purple-shade-light:hover {
+    border-color: var(--purple-shade-light);
+}
+.hover-pink-shade-light:hover {
+    border-color: var(--pink-shade-light);
 }

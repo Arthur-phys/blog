@@ -4,6 +4,7 @@ import type { PostIndex } from "../interfaces/post";
 import { LatestPostsService } from "../services/postService";
 import FileIcon from "./FileIcon";
 import { useSearchParams } from 'react-router';
+import { randomColorPick } from '../utils/utils';
 
 export default function LatestPosts() {
 
@@ -24,12 +25,14 @@ export default function LatestPosts() {
             {
               latestPosts.map((post, i) => (
                   <li key={i}>
-                    <div className='latest-post' onClick={(_) => {
+                    <div className={"latest-post" + ` hover-${randomColorPick()}`}
+                    onClick={(_) => {
                         const newParams = new URLSearchParams();
                         newParams.set("post", post.slug);
                         setSearchParams(newParams);
-                    }}>
-                      <FileIcon size='1.5rem' padding='0' stroke='var(--black)'/>{post.name}
+                    }}
+                    >
+                      <FileIcon size='1.5rem' padding='0rem' stroke='var(--black)'/>{post.name}
                     </div>
                   </li>
                 )

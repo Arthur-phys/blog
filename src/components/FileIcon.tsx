@@ -2,7 +2,7 @@ export default function FileIcon({size, padding, stroke}: {size: string, padding
   return (
     <>
       <svg 
-      style={{padding: padding, width: size, height: size}}
+      style={{padding: padding, minWidth: size}}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
       className="ionicon"

@@ -3,6 +3,7 @@ import type { PostObject } from '../interfaces/post'
 import { useSearchParams } from 'react-router'
 import { useEffect, useState } from 'react';
 import { PostService } from '../services/postService';
+import { randomColorPick } from '../utils/utils';
 
 export default function Post() {
 
@@ -35,15 +36,23 @@ export default function Post() {
                 </div>
                 <div className='keywords'>
                     <span className='keyword-title'>Keywords:</span>
-                    {content?.post.keywords.map(k => {
-                        return <span className='keyword' style={{
-                            backgroundColor: `var(--${selectRandomColor()})`
-                        }}>{k}</span>
+                    {content?.post.keywords.map((k, i) => {
+                        return (
+                            <span
+                                key={i}
+                                className='keyword'
+                                style={{
+                                    backgroundColor: `var(--${randomColorPick()})`
+                                }}
+                            >
+                                {k}
+                            </span>
+                        )
                     })}
                 </div>
                 {
-                    content?.post.sections.map(s => (
-                        <div key={s.title}>
+                    content?.post.sections.map((s, i) => (
+                        <div key={`${s.title}+${i}`}>
                             <h2>{s.title}</h2>
                             <p>{s.text}</p>
                             {s.image ?
@@ -72,10 +81,5 @@ const setImageSize = (scale: string | null) => {
         maxWidth: `${scaleMultiplier}`,
         height: "auto",
     }
-}
-
-const selectRandomColor = (): string => {
-    const colors = ["red-shade-light", "orange-shade-light", "yellow-shade-light", "green-shade-light", "blue-shade-light", "deep-blue-shade-light", "purple-shade-light", "pink-shade-light"];
-    return colors[Math.floor(Math.random()*colors.length)]
 }
 

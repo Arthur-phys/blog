@@ -46,9 +46,6 @@ export default function Sidebar() {
           <h3 className='category-title'>Latest (っᵔ◡ᵔ)っ</h3>
           <LatestPosts/>
         </div>
-        <div className='category'>
-          <h3 className='category-title'>About me ₍^. .^₎Ⳋ </h3>
-        </div>
       </div>
 
     </div>
