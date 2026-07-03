@@ -8,6 +8,15 @@
     --purple-background: #06040a;
     --black: #000000;
     --black-shade: #666666;
+    --black-shade-light: #AAAAAA;
+    --red-shade-light: #b17373;
+    --orange-shade-light: #b18f73;
+    --yellow-shade-light: #b1ae73;
+    --green-shade-light: #8bb173;
+    --blue-shade-light: #73b19e;
+    --deep-blue-shade-light: #738cb1;
+    --purple-shade-light: #8c7ec0;
+    --pink-shade-light: #b173ad;
     --purple-shade: #8a8790;
     --white: #e8e7e9;
 }
