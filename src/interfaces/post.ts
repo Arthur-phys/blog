@@ -26,4 +26,13 @@ export interface PostOverview {
     name: string,
 }
 
+export interface LinkedPosts {
+    next: string,
+    previous: string
+}
+
+export interface LinkedPostsDir {
+    [key: string]: LinkedPostsDir
+}
+
 export type PostIndex = Array<PostOverview>;

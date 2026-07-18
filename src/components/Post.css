@@ -40,10 +40,15 @@ h2 {
     margin: 0 20rem;
 }
 
+.post-container {
+    display: flex;
+    flex-direction: column;
+}
+
 .end-bar {
     width: 100%;
     height: 0.1rem;
-    margin-bottom: 12rem;
+    margin-bottom: 5rem;
     margin-top: 5rem;
     border: 1px groove var(--white);
 }

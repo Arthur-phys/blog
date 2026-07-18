@@ -1,0 +1,18 @@
+.post-navigator {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 13rem 5rem 13rem;
+}
+
+.next-post, .prev-post {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    cursor: url("/pointer.png"), pointer !important;
+    transition: transform 0.15s, color 0.15s;
+}
+
+.next-post:hover, .prev-post:hover {
+    transform: scale(1.2);
+}

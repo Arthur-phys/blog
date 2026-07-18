@@ -1,0 +1,14 @@
+{
+   "not-found": {
+      "previous": "",
+      "next": "sicp-thoughts"
+   },
+   "sicp-thoughts": {
+      "previous": "not-found",
+      "next": "welcome"
+   },
+   "welcome": {
+      "previous": "sicp-thoughts",
+      "next": ""
+   }
+}
