@@ -6,7 +6,6 @@ import os
 load_dotenv()
 
 post_folder = os.getenv("WORKDIR") + "/public/posts"
-linked_list_file =  post_folder + "/linked.json"
 
 dir_path = Path(post_folder)
 post_dirs = [Path()]
@@ -17,5 +16,7 @@ linked_list = {}
 for i in range(1, len(post_dirs) - 1):
     linked_list[post_dirs[i].name] = {"previous": post_dirs[i-1].name, "next": post_dirs[i+1].name}
 
-with open(linked_list_file, "w", encoding="utf-8") as file:
-    file.write(json.dumps(linked_list, indent=3))
+for key,value in linked_list.items():
+    linked_list_file =  post_folder + f'/{key}' + "/linked.json"
+    with open(linked_list_file, "w", encoding="utf-8") as file:
+        file.write(json.dumps(linked_list[key], indent=3))

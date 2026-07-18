@@ -73,7 +73,7 @@ export default function Post() {
                     }
                     <div className='end-bar'></div>
                 </div>
-                <NextPost/>
+                <NextPost postSlug={content?.slug}/>
             </div>
         </>
     )

@@ -1,6 +1,6 @@
-import type { LinkedPostsDir } from "../interfaces/post";
+import type { LinkedPosts } from "../interfaces/post";
 
-export async function GetLinkedPosts(): Promise<LinkedPostsDir> {
-    const response = await fetch(`/posts/linked.json`)
+export async function GetLinkedPosts(postSlug: string): Promise<LinkedPosts> {
+    const response = await fetch(`/posts/${postSlug}/linked.json`)
     return await response.json();
 }
