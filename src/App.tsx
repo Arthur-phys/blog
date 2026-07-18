@@ -12,6 +12,7 @@ function App() {
   useEffect(() => {
     async function saveLinkedToLocalStore() {
       let linkedPosts = await GetLinkedPosts();
+      
     }
   }, [])
 
