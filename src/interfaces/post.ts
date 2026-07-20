@@ -19,16 +19,13 @@ export interface PostDetails {
 export interface PostObject {
     slug: string,
     post: PostDetails
+    previous: PostOverview,
+    next: PostOverview
 }
 
 export interface PostOverview {
     slug: string,
     name: string,
-}
-
-export interface LinkedPosts {
-    next: string,
-    previous: string
 }
 
 export interface LinkedPostsDir {

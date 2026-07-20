@@ -1,55 +1,45 @@
 import './NextPost.css'
 import AngleLeft from './AngleLeft'
 import AngleRight from './AngleRight'
-import { useEffect, useState } from 'react'
-import { GetLinkedPosts } from '../services/LinkedPostsService'
-import type { LinkedPosts } from '../interfaces/post'
 import { useSearchParams } from 'react-router'
+import type { PostOverview } from '../interfaces/post';
 
 
-export default function NextPost({ postSlug }: {postSlug: string | undefined}) {
+export default function NextPost({ prevPost, nextPost }: {prevPost: PostOverview, nextPost: PostOverview}) {
 
-    const [linkedPosts, setLinkedPosts]= useState<LinkedPosts>();
     const [_, setSearchParams] = useSearchParams();
-
-
-    useEffect(() => {
-        async function getLinkedPosts() {
-            if (postSlug != undefined) {
-                const retrievedPosts = await GetLinkedPosts(postSlug)
-                setLinkedPosts(retrievedPosts)
-            }
-        }
-        getLinkedPosts()
-    },[postSlug])
 
     return (
         <>
             <div className='post-navigator'>
-                <div className="prev-post"
-                onClick={(_) => {
-                        if (linkedPosts) {
+                {
+                    prevPost ? 
+                    <div className="prev-post"
+                        onClick={(_) => {
+                                const newParams = new URLSearchParams();
+                                newParams.set("post", prevPost.slug);
+                                setSearchParams(newParams);
+                            }}
+                        >
+                            <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
+                            <span>{prevPost.name}</span>
+                        </div> : 
+                        <div></div>
+                }
+                {
+                    nextPost ? 
+                    <div className='next-post'
+                        onClick={(_) => {
                             const newParams = new URLSearchParams();
-                            newParams.set("post", linkedPosts.previous);
+                            newParams.set("post", nextPost.slug);
                             setSearchParams(newParams);
-                        }
-                    }}
-                >
-                    <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
-                    <span>{linkedPosts?.previous}</span>
-                </div>
-                <div className='next-post'
-                    onClick={(_) => {
-                        if (linkedPosts) {
-                            const newParams = new URLSearchParams();
-                            newParams.set("post", linkedPosts.next);
-                            setSearchParams(newParams);
-                        }
-                    }}
-                >
-                    <AngleRight stroke='var(--white)' size='4rem' padding='0.1rem'/>
-                    <span>{linkedPosts?.next}</span>
-                </div>
+                        }}
+                    >
+                        <AngleRight stroke='var(--white)' size='4rem' padding='0.1rem'/>
+                        <span>{nextPost.name}</span>
+                    </div> :
+                    <div></div>
+                }
             </div>
         </>
     )

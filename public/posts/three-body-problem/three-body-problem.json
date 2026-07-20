@@ -1,0 +1,22 @@
+{
+   "slug": "three-body-problem",
+   "post": {
+      "title": "Simmulating a Three Body System Under the Influence of Gravity",
+      "keywords": [
+        "Cixin Liu",
+        "Three Body",
+        "Physics",
+        "Fun",
+        "Simmulation"
+      ],
+      "sections": [
+         {
+            "title": "Background",
+            "text": "some background",
+            "image": ""
+         }
+      ]
+   },
+   "previous": "scip-thoughts",
+   "next": "welcome"
+}

@@ -1,33 +1,41 @@
 {
-    "slug": "welcome",
-    "post": {
-        "title": "Welcome to my Blog! [Under Construction]",
-        "keywords": ["welcome","life","me","cats","hobbies"],
-        "sections": [
-            {
-                "title": "Who Am I?",
-                "text": "Hi, my name is Arturo. I live in a small apartment in Mexico City with my partner and two small cats.",
-                "image": {
-                    "path": "/posts/welcome/cats.jpeg",
-                    "text": "My cats, Marie and Pascal, a couple of months ago",
-                    "scale": "60%"
-                }
-            },
-            {
-                "title": "",
-                "text": "I studied Physics, but nowadays I dedicate most of my time to Software Engineering and playing videogames. Aside from videogames, I have a couple other hobbies: baking bread, rollerblading and reading. I also like swimming and running."
-            },
-            {
-                "title": "Why does this site exist?",
-                "text": "To express whatever thoughts occur to me in a way in which they leave a footprint that is harder to erase than the short timespan in which they may live in my brain. Some of the posts in here hopefully will be something that is worth remembering, while most of them will be forgotten way easier than they were written, but that is fine as long as I have a place to write wathever I find interesting and share it with the people that are important to me."
-            },
-            {
-                "title": "What will you find in this site?",
-                "text": "Mostly whatever I find interesting at the moment, but the most recurring themes would be: answer to questions I wonder about Physics, Software Engineering or Computer Science; some cool sutff I find out about any of my hobbies; and maybe a thought or two about anything I experience in life. This page is to be lighthearted, so there should be no expectation for there to be sensitive or highly debatable topics. In another vein, you may find some posts in spanish, depending on how I feel I should write that day (and because I hope to be a more compelling wirter in my mother tongue), but I will mark them at the beggining like so if it is the case. Finally, as a strict rule, there is not an inch of AI in this webpage (that's right, even the UI was made by hand. Yes, in 2026 or whatever year you are reading this in) not so much because I oppose it, but because the idea is for this blog to generate a real (although fleeting) human connection with the reader and also because I do not want to make you read an AI-generated slop post that may or may not be informative (that is, supposing you find wathever is in here useful or interesting to read)."
-            },
-            {
-                "title": ""
+   "slug": "welcome",
+   "post": {
+      "title": "Welcome to my Blog! [Under Construction]",
+      "keywords": [
+         "welcome",
+         "life",
+         "me",
+         "cats",
+         "hobbies"
+      ],
+      "sections": [
+         {
+            "title": "Who Am I?",
+            "text": "Hi, my name is Arturo. I live in a small apartment in Mexico City with my partner and two small cats.",
+            "image": {
+               "path": "/posts/welcome/cats.jpeg",
+               "text": "My cats, Marie and Pascal, a couple of months ago",
+               "scale": "60%"
             }
-        ]
-    }
+         },
+         {
+            "title": "",
+            "text": "I studied Physics, but nowadays I dedicate most of my time to Software Engineering and playing videogames. Aside from videogames, I have a couple other hobbies: baking bread, rollerblading and reading. I also like swimming and running."
+         },
+         {
+            "title": "Why does this site exist?",
+            "text": "To express whatever thoughts occur to me in a way in which they leave a footprint that is harder to erase than the short timespan in which they may live in my brain. Some of the posts in here hopefully will be something that is worth remembering, while most of them will be forgotten way easier than they were written, but that is fine as long as I have a place to write wathever I find interesting and share it with the people that are important to me."
+         },
+         {
+            "title": "What will you find in this site?",
+            "text": "Mostly whatever I find interesting at the moment, but the most recurring themes would be: answer to questions I wonder about Physics, Software Engineering or Computer Science; some cool sutff I find out about any of my hobbies; and maybe a thought or two about anything I experience in life. This page is to be lighthearted, so there should be no expectation for there to be sensitive or highly debatable topics. In another vein, you may find some posts in spanish, depending on how I feel I should write that day (and because I hope to be a more compelling wirter in my mother tongue), but I will mark them at the beggining like so if it is the case. Finally, as a strict rule, there is not an inch of AI in this webpage (that's right, even the UI was made by hand. Yes, in 2026 or whatever year you are reading this in) not so much because I oppose it, but because the idea is for this blog to generate a real (although fleeting) human connection with the reader and also because I do not want to make you read an AI-generated slop post that may or may not be informative (that is, supposing you find wathever is in here useful or interesting to read)."
+         },
+         {
+            "title": ""
+         }
+      ]
+   },
+   "previous": "sicp-thoughts",
+   "next": ""
 }

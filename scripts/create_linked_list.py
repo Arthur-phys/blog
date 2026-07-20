@@ -17,6 +17,11 @@ for i in range(1, len(post_dirs) - 1):
     linked_list[post_dirs[i].name] = {"previous": post_dirs[i-1].name, "next": post_dirs[i+1].name}
 
 for key,value in linked_list.items():
-    linked_list_file =  post_folder + f'/{key}' + "/linked.json"
-    with open(linked_list_file, "w", encoding="utf-8") as file:
-        file.write(json.dumps(linked_list[key], indent=3))
+    linked_list_file =  post_folder + f'/{key}' + f'/{key}.json'
+    with open(linked_list_file, "r+", encoding="utf-8") as file:
+        post = json.load(file)
+        post["previous"] = linked_list[key]["previous"]
+        post["next"] = linked_list[key]["next"]
+        file.truncate(0)
+        file.seek(0)
+        file.write(json.dumps(post, indent=3))

@@ -1,9 +1,10 @@
 {
-    "slug": "not-found",
-    "post": {
-        "title": "Upss!! I did not find that ( ˶°ㅁ°) !!",
-        "sections": [],
-        "keywords": []
-    }
-    
+   "slug": "not-found",
+   "post": {
+      "title": "Upss!! I did not find that ( \u02f6\u00b0\u3141\u00b0) !!",
+      "sections": [],
+      "keywords": []
+   },
+   "previous": "",
+   "next": "sicp-thoughts"
 }

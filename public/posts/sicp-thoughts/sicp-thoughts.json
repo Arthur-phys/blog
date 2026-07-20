@@ -1,14 +1,22 @@
 {
-    "slug": "sicp-thoughts",
-    "post": {
-        "title": "Thoughts About the Famous CS Book SICP",
-        "keywords": ["sicp","cs","book","thoughts","functional programming"],
-        "sections": [
-            {
-                "title": "Background",
-                "text": "some background",
-                "image": ""
-            }
-        ]
-    }
+   "slug": "sicp-thoughts",
+   "post": {
+      "title": "Thoughts About the Famous CS Book SICP",
+      "keywords": [
+         "sicp",
+         "cs",
+         "book",
+         "thoughts",
+         "functional programming"
+      ],
+      "sections": [
+         {
+            "title": "Background",
+            "text": "some background",
+            "image": ""
+         }
+      ]
+   },
+   "previous": "not-found",
+   "next": "welcome"
 }

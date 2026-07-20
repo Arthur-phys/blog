@@ -1,1 +1,10 @@
-[{"slug": "welcome", "name": "Welcome to my Blog!"}, {"slug": "sicp-thoughts", "name":"Thoughts About the Famous CS Book SICP"}]
+{
+    "welcome": {
+        "name": "Welcome to my Blog!",
+        "date": ""
+    },
+    "sicp-thoughts": {
+        "name": "Thoughts About the Famous CS Book SICP",
+        "date": ""
+    }
+}
