@@ -3,11 +3,11 @@
    "post": {
       "title": "Simmulating a Three Body System Under the Influence of Gravity",
       "keywords": [
-        "Cixin Liu",
-        "Three Body",
-        "Physics",
-        "Fun",
-        "Simmulation"
+         "Cixin Liu",
+         "Three Body",
+         "Physics",
+         "Fun",
+         "Simmulation"
       ],
       "sections": [
          {
@@ -17,6 +17,12 @@
          }
       ]
    },
-   "previous": "scip-thoughts",
-   "next": "welcome"
+   "previous": {
+      "slug": "sicp-thoughts",
+      "title": "Thoughts About the Famous CS Book SICP"
+   },
+   "next": {
+      "slug": "welcome",
+      "title": "Welcome to my Blog! [Under Construction]"
+   }
 }

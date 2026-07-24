@@ -1,6 +1,6 @@
 import './LatestPosts.css';
 import { useEffect, useState } from "react";
-import type { PostIndex } from "../interfaces/post";
+import type { PostIndex } from "../interfaces/postIndex";
 import { LatestPostsService } from "../services/postService";
 import FileIcon from "./FileIcon";
 import { useSearchParams } from 'react-router';
@@ -32,7 +32,7 @@ export default function LatestPosts() {
                         setSearchParams(newParams);
                     }}
                     >
-                      <FileIcon size='1.5rem' padding='0rem' stroke='var(--black)'/>{post.name}
+                      <FileIcon size='1.5rem' padding='0rem' stroke='var(--black)'/>{post.title}
                     </div>
                   </li>
                 )

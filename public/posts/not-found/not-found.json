@@ -5,6 +5,12 @@
       "sections": [],
       "keywords": []
    },
-   "previous": "",
-   "next": "sicp-thoughts"
+   "previous": {
+      "slug": "",
+      "title": ""
+   },
+   "next": {
+      "slug": "sicp-thoughts",
+      "title": "Thoughts About the Famous CS Book SICP"
+   }
 }

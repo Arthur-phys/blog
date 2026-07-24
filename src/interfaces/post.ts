@@ -25,11 +25,5 @@ export interface PostObject {
 
 export interface PostOverview {
     slug: string,
-    name: string,
+    title: string,
 }
-
-export interface LinkedPostsDir {
-    [key: string]: LinkedPostsDir
-}
-
-export type PostIndex = Array<PostOverview>;

@@ -17,6 +17,12 @@
          }
       ]
    },
-   "previous": "not-found",
-   "next": "welcome"
+   "previous": {
+      "slug": "not-found",
+      "title": "Upss!! I did not find that ( \u02f6\u00b0\u3141\u00b0) !!"
+   },
+   "next": {
+      "slug": "three-body-problem",
+      "title": "Simmulating a Three Body System Under the Influence of Gravity"
+   }
 }

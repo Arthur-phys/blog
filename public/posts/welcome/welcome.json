@@ -36,6 +36,12 @@
          }
       ]
    },
-   "previous": "sicp-thoughts",
-   "next": ""
+   "previous": {
+      "slug": "three-body-problem",
+      "title": "Simmulating a Three Body System Under the Influence of Gravity"
+   },
+   "next": {
+      "slug": "",
+      "title": ""
+   }
 }

@@ -73,7 +73,7 @@ export default function Post() {
                     }
                     <div className='end-bar'></div>
                 </div>
-                <NextPost nextPost={content!.next} prevPost={content!.previous}/>
+                <NextPost nextPost={content?.next} prevPost={content?.previous}/>
             </div>
         </>
     )

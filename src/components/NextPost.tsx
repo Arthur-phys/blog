@@ -5,7 +5,7 @@ import { useSearchParams } from 'react-router'
 import type { PostOverview } from '../interfaces/post';
 
 
-export default function NextPost({ prevPost, nextPost }: {prevPost: PostOverview, nextPost: PostOverview}) {
+export default function NextPost({ prevPost, nextPost }: {prevPost?: PostOverview, nextPost?: PostOverview}) {
 
     const [_, setSearchParams] = useSearchParams();
 
@@ -22,7 +22,7 @@ export default function NextPost({ prevPost, nextPost }: {prevPost: PostOverview
                             }}
                         >
                             <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
-                            <span>{prevPost.name}</span>
+                            <span>{prevPost.title}</span>
                         </div> : 
                         <div></div>
                 }
@@ -36,7 +36,7 @@ export default function NextPost({ prevPost, nextPost }: {prevPost: PostOverview
                         }}
                     >
                         <AngleRight stroke='var(--white)' size='4rem' padding='0.1rem'/>
-                        <span>{nextPost.name}</span>
+                        <span>{nextPost.title}</span>
                     </div> :
                     <div></div>
                 }

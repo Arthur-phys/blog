@@ -1,4 +1,5 @@
-import type { PostIndex, PostObject } from "../interfaces/post";
+import type { PostIndex } from "../interfaces/postIndex"
+import type { PostObject } from "../interfaces/post";
 
 export async function PostService(postSlugName: string): Promise<PostObject> {
     let postContent: PostObject;
