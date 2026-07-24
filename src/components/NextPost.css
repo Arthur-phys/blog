@@ -5,7 +5,7 @@
 }
 
 .next-post, .prev-post {
-    font-size: 2rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -13,6 +13,32 @@
     transition: transform 0.15s, color 0.15s;
 }
 
+.next-post p, .prev-post p {
+    max-width: 25rem;
+    max-height: 3rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .next-post:hover, .prev-post:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
+}
+
+@media (max-width: 800px) {
+    .next-post p, .prev-post p {
+        max-width: 20rem;
+    }
+    .post-navigator {
+        margin: 0 3rem 5rem 3rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .next-post p, .prev-post p {
+        max-width: 15rem;
+    }
+    .post-navigator {
+        margin: 0 1rem 5rem 1rem;
+    }
 }

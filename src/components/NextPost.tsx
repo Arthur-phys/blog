@@ -22,7 +22,7 @@ export default function NextPost({ prevPost, nextPost }: {prevPost?: PostOvervie
                             }}
                         >
                             <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
-                            <span>{prevPost.title}</span>
+                            <p>{prevPost.title}</p>
                         </div> : 
                         <div></div>
                 }
@@ -36,7 +36,7 @@ export default function NextPost({ prevPost, nextPost }: {prevPost?: PostOvervie
                         }}
                     >
                         <AngleRight stroke='var(--white)' size='4rem' padding='0.1rem'/>
-                        <span>{nextPost.title}</span>
+                        <p>{nextPost.title}</p>
                     </div> :
                     <div></div>
                 }
