@@ -31,6 +31,46 @@ html {
     cursor: url("/cursor.png"), auto;
 }
 
+.post-content {
+    margin: 0 20rem;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1200px) {
+    .post-content {
+        margin: 0 15rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .post-content {
+        margin: 0 12rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .post-content {
+        margin: 0 8rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .post-content {
+        margin: 0 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-content {
+        margin: 0;
+    }
+}
+
+
 @media (max-width: 1024px) {
     html {
         font-size: 56.25%;
@@ -92,4 +132,29 @@ p {
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.5;
+}
+
+.hover-red-shade-light:hover {
+    border-color: var(--red-shade-light);
+}
+.hover-orange-shade-light:hover {
+    border-color: var(--orange-shade-light);
+}
+.hover-yellow-shade-light:hover {
+    border-color: var(--yellow-shade-light);
+}
+.hover-green-shade-light:hover {
+    border-color: var(--green-shade-light);
+}
+.hover-blue-shade-light:hover {
+    border-color: var(--blue-shade-light);
+}
+.hover-deep-blue-shade-light:hover {
+    border-color: var(--deep-blue-shade-light);
+}
+.hover-purple-shade-light:hover {
+    border-color: var(--purple-shade-light);
+}
+.hover-pink-shade-light:hover {
+    border-color: var(--pink-shade-light);
 }

@@ -1,8 +1,10 @@
-import { useEffect, useRef, useState } from 'react'
-import MenuIcon from './MenuIcon.tsx'
 import './Sidebar.css'
 import LatestPosts from './LatestPosts.tsx';
 import SearchBar from './SearchBar.tsx';
+import MenuIcon from './MenuIcon.tsx'
+import BrainIcon from './Brain.tsx';
+import { useEffect, useRef, useState } from 'react'
+import { randomColorPick } from '../utils/utils.ts';
 
 export default function Sidebar() {
 
@@ -44,8 +46,19 @@ export default function Sidebar() {
           <SearchBar/>
         </div>
         <div className='category'>
-          <h3 className='category-title'>Latest (っᵔ◡ᵔ)っ</h3>
+          <div className='category-title'>
+            <BrainIcon size='2rem' padding='0' stroke='var(--black)'/>
+            <h3>Latest (っᵔ◡ᵔ)っ</h3>
+          </div>
           <LatestPosts/>
+        </div>
+        <div className='category'>
+          <div className='category-title'>
+          <BrainIcon size='2rem' padding='0' stroke='var(--black)'/>
+          <h3 className={"category-link" + ` hover-${randomColorPick()}`}>
+            Index (╭ರ_•́)
+          </h3>
+          </div>
         </div>
       </div>
 

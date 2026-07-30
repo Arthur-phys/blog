@@ -62,7 +62,19 @@
 }
 
 .category-title {
+    display: flex;
     margin-bottom: 1rem;
+}
+
+.category-link {
+    padding: 0.5rem;
+    border: 5px solid #00000000;
+    border-radius: 5px;
+    transition: border-color 0.15s;
+}
+
+.category-link:hover {
+    cursor: url("/pointer.png"), pointer !important;
 }
 
 
