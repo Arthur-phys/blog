@@ -6,8 +6,9 @@ import FileIcon from "./FileIcon";
 
 export default function Index() {
 
-    
     const [index, setIndex] = useState<PostIndex>();
+    const [page, setPage] = useState<number>(1);
+
     useEffect(() => {
         const indexGetter = async () => {
             const indexBody = await IndexService();
@@ -19,17 +20,16 @@ export default function Index() {
 
     return (
         <>
-            <div className="post-content">
-                { index ? index?.map((entry) => {
-                    console.log(entry.lastModified)
+            <ul className="post-content">
+                { index ? index.slice((page-1)* 10, page*10)?.map((entry) => {
                     return (
-                        <div className="index-entry">
+                        <li className="index-entry">
                             <FileIcon size="2.5rem" padding="0" stroke="var(--white)"/>
                             {entry.title} - {(new Date(entry.lastModified as unknown as number * 1000)).toLocaleDateString("en-US")}
-                        </div>
+                        </li>
                     )
                 }) : <></>}
-            </div>
+            </ul>
         </>
     )
 }

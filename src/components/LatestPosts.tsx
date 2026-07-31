@@ -3,13 +3,13 @@ import { useEffect, useState } from "react";
 import type { PostIndex } from "../interfaces/postIndex";
 import { LatestPostsService } from "../services/postService";
 import FileIcon from "./FileIcon";
-import { useSearchParams } from 'react-router';
+import { useNavigate, useSearchParams } from 'react-router';
 import { randomColorPick } from '../utils/utils';
 
 export default function LatestPosts() {
 
     const [latestPosts, setLatestPosts] = useState<PostIndex>([]);
-    const [_, setSearchParams] = useSearchParams();
+    const navigate = useNavigate();
 
     useEffect(() => {
     const retrieveLatestPosts = async () => {
@@ -27,12 +27,10 @@ export default function LatestPosts() {
                   <li key={i}>
                     <div className={"latest-post" + ` hover-${randomColorPick()}`}
                     onClick={(_) => {
-                        const newParams = new URLSearchParams();
-                        newParams.set("post", post.slug);
-                        setSearchParams(newParams);
+                        navigate(`/?post=${post.slug}`);
                     }}
                     >
-                      <FileIcon size='1.5rem' padding='0rem' stroke='var(--black)'/>{post.title}
+                      <FileIcon size='2rem' padding='0rem' stroke='var(--white)'/>{post.title}
                     </div>
                   </li>
                 )

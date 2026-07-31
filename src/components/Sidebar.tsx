@@ -5,6 +5,8 @@ import MenuIcon from './MenuIcon.tsx'
 import BrainIcon from './Brain.tsx';
 import { useEffect, useRef, useState } from 'react'
 import { randomColorPick } from '../utils/utils.ts';
+import Pointer from './Pointer.tsx';
+import { Link } from 'react-router';
 
 export default function Sidebar() {
 
@@ -38,27 +40,27 @@ export default function Sidebar() {
     <>
     <div className={"sidebar mobile-sidebar" + (visible ? " sidebar-visible" : "")} ref={sidebar}>   
       <div ref={rightSidebar} className="mobile-icon sidebar-icon">
-        <MenuIcon stroke='var(--black)'/>
+        <MenuIcon stroke='var(--white)'/>
       </div>
       <div className="sidebar-content">
         <p className="sidebar-title">Menu</p>
         <div className='category'>
-          <SearchBar/>
+          <Link to={"/post-index"} className={"category-link" + ` hover-${randomColorPick()}`}>
+          <Pointer size='2.5rem' padding='0' stroke='var(--white)'/>
+          <h3>
+            Index (╭ರ_•́)
+          </h3>
+          </Link>
         </div>
         <div className='category'>
           <div className='category-title'>
-            <BrainIcon size='2rem' padding='0' stroke='var(--black)'/>
+            <BrainIcon size='2.5rem' padding='0' stroke='var(--white)'/>
             <h3>Latest (っᵔ◡ᵔ)っ</h3>
           </div>
           <LatestPosts/>
         </div>
         <div className='category'>
-          <div className='category-title'>
-          <BrainIcon size='2rem' padding='0' stroke='var(--black)'/>
-          <h3 className={"category-link" + ` hover-${randomColorPick()}`}>
-            Index (╭ರ_•́)
-          </h3>
-          </div>
+          <SearchBar/>
         </div>
       </div>
 
