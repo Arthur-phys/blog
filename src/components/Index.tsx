@@ -7,7 +7,7 @@ import FileIcon from "./FileIcon";
 export default function Index() {
 
     const [index, setIndex] = useState<PostIndex>();
-    const [page, setPage] = useState<number>(1);
+    const [page, _] = useState<number>(1);
 
     useEffect(() => {
         const indexGetter = async () => {
