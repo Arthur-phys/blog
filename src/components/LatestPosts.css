@@ -16,3 +16,9 @@
 .latest-post:hover {
     cursor: url("/pointer.png"), pointer !important;
 }
+
+@media(max-width: 480px) {
+    .latest-post {
+        width: 90% !important;
+    }
+}

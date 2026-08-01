@@ -37,7 +37,6 @@ export default function Post() {
                         <h1>{content?.post.title}</h1>
                     </div>
                     <div className='keywords'>
-                        <span className='keyword-title'>Keywords:</span>
                         {content?.post.keywords.map((k, i) => {
                             return (
                                 <span

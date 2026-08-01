@@ -77,7 +77,7 @@
     width: 100%;
     background-color: rgba(255, 255, 255, 0.08);
     padding: 0.5rem;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
     border: 5px solid #00000000;
     border-radius: 5px;
     transition: border-color 0.15s;
@@ -99,11 +99,16 @@
 
 
 @media(max-width: 480px) {
+
+    .category-link {
+        width: 90%;
+    }
     .mobile-icon {
-        height: 6rem !important;
+        height: 5rem !important;
         background-color: var(--black-charcoal);
         border-radius: 0 5px 5px 0;
         align-items: center;
+        width: 3rem;
         position: relative;
         margin-top: 5rem;
     }
@@ -111,21 +116,25 @@
     .mobile-icon::after {
         content: "";
         clip-path: inset(0 0 0 0 round 0 8px 0 0);
-        width: 3.5rem;
-        height: 3rem;
+        width: 3rem;
+        height: 2rem;
         position: absolute;
-        top: -2.7rem;
+        top: -1.7rem;
         left: 0rem;
-        background: linear-gradient(to top right, var(--black-charcoal) 49.5%, rgba(0, 0, 0, 0) 50.5%);
+        background-color: var(--black-charcoal);
+        clip-path: polygon(50% 100%, 100% 100%, 99% 92%, 90% 73%, 71% 48%, 27% 18%, 0 0%, 0% 30%, 0% 65%, 0 100%);
+
+
     }
     .mobile-icon::before {
         content: "";
-        width: 3.5rem;
-        height: 3rem;
+        width: 3rem;
+        height: 2rem;
         position: absolute;
-        bottom: -2.7rem;
+        bottom: -1.7rem;
         left: 0rem;
-        background: linear-gradient(to bottom right, var(--black-charcoal) 50%, rgba(0, 0, 0, 0) 50%);
+        background-color: var(--black-charcoal);
+        clip-path: polygon(50% 0%, 100% 0, 99% 8%, 90% 27%, 71% 52%, 27% 82%, 0 100%, 0% 70%, 0% 35%, 0 0);
     }
     
     .mobile-sidebar {

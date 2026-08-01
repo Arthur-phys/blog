@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import type { PostIndex } from "../interfaces/postIndex";
 import { LatestPostsService } from "../services/postService";
 import FileIcon from "./FileIcon";
-import { useNavigate, useSearchParams } from 'react-router';
+import { useNavigate } from 'react-router';
 import { randomColorPick } from '../utils/utils';
 
 export default function LatestPosts() {
