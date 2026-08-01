@@ -1,4 +1,28 @@
 .index-entry {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: left;
     margin-bottom: 1rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 2rem;
+    cursor: url('/pointer.png'), pointer !important;
+}
+
+.index-entry:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.index-list-item {
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.index-list-item::after {
+    content: "";
+    background-color: #6c5d2d;
+    height: 1px;
 }

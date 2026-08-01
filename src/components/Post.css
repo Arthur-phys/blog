@@ -21,8 +21,8 @@ h2 {
 .keywords {
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(7rem, 1fr));
-    grid-gap: 0.2rem;
+    grid-template-columns: repeat(auto-fill, minmax(9rem, 1fr));
+    grid-gap: 0.2rem 0.5rem;
 }
 
 .keyword-title {
@@ -32,7 +32,7 @@ h2 {
 
 .keyword {
     font-size: 1.4rem;
-    color: var(--black);
+    color: var(--black-charcoal-2);
     padding: 0.5rem 1rem;
     border-radius: 10px;
     text-align: center;

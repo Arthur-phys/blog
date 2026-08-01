@@ -20,16 +20,27 @@ export default function Index() {
 
     return (
         <>
-            <ul className="post-content">
-                { index ? index.slice((page-1)* 10, page*10)?.map((entry) => {
-                    return (
-                        <li className="index-entry">
-                            <FileIcon size="2.5rem" padding="0" stroke="var(--white)"/>
-                            {entry.title} - {(new Date(entry.lastModified as unknown as number * 1000)).toLocaleDateString("en-US")}
-                        </li>
-                    )
-                }) : <></>}
-            </ul>
+                { index ?
+                <div>
+                    <ul className="post-content">
+                        {index.slice((page-1)* 10, page*10)?.map((entry) => {
+                            return (
+                                <li className="index-list-item">
+                                <div className="index-entry">
+                                    <FileIcon size="2.5rem" padding="0" stroke="var(--white)"/>
+                                    {entry.title} - {(new Date(entry.lastModified as unknown as number * 1000)).toLocaleDateString("en-US")}
+                                </div>
+                            </li>
+                        )
+                    })}
+                    </ul>
+                    <div>
+                        <div>previous</div>
+                        <div>next</div>
+                    </div>
+                </div>
+
+                : <></>}
         </>
     )
 }
