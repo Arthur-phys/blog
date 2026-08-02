@@ -1,0 +1,23 @@
+.simple-header {
+    display: flex;
+    justify-content: right;
+    margin: 1.5rem 3rem 1.5rem 0;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.simple-header:hover {
+    cursor: url('/pointer.png'), pointer !important;
+}
+
+.letter {
+    display: flex;
+    padding: 0 0.2rem;
+    transition: 0.2s transform;
+}
+
+.letter:hover {
+    transform: translateY(-0.5rem);
+    cursor: url('/pointer.png'), pointer !important;
+}

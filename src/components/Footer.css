@@ -1,0 +1,17 @@
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
+.icon-wrapper {
+    transition: 0.15s transform;
+}
+
+.icon-wrapper:hover {
+    cursor: url('/pointer.png'), pointer !important;
+    transform: scale(1.2);
+}
