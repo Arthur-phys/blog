@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import { PostService } from '../services/postService';
 import { randomColorPick } from '../utils/utils';
 import NextPost from './NextPost';
+import MainContainer from './shared/MainContainer';
 
 export default function Post() {
 
@@ -30,50 +31,52 @@ export default function Post() {
 
     return (
         <>
-            <div className='post-container'>
-                <div className='post-content'>
-                    <div className='post-title'>
-                        <div className='title-marker'></div>
-                        <h1>{content?.post.title}</h1>
-                    </div>
-                    <div className='keywords'>
-                        {content?.post.keywords.map((k, i) => {
-                            return (
-                                <span
-                                    key={i}
-                                    className='keyword'
-                                    style={{
-                                        backgroundColor: `var(--${randomColorPick()})`
-                                    }}
-                                >
-                                    {k}
-                                </span>
-                            )
-                        })}
-                    </div>
-                    {
-                        content?.post.sections.map((s, i) => (
-                            <div key={`${s.title}+${i}`}>
-                                <h2>{s.title}</h2>
-                                <p>{s.text}</p>
-                                {s.image ?
-                                <div className='image'>
-                                    <img src={s.image.path} alt={s.image.text}
-                                        style={setImageSize(s.image.scale)}
-                                    />
-                                    <p>{s.image.text}</p>
+                <MainContainer
+                    children={
+                    <>
+                        <div className='post-title'>
+                            <div className='title-marker'></div>
+                            <h1>{content?.post.title}</h1>
+                        </div>
+                        <div className='keywords'>
+                            {content?.post.keywords.map((k, i) => {
+                                return (
+                                    <span
+                                        key={i}
+                                        className='keyword'
+                                        style={{
+                                            backgroundColor: `var(--${randomColorPick()})`
+                                        }}
+                                    >
+                                        {k}
+                                    </span>
+                                )
+                            })}
+                        </div>
+                        {
+                            content?.post.sections.map((s, i) => (
+                                <div key={`${s.title}+${i}`}>
+                                    <h2>{s.title}</h2>
+                                    <p>{s.text}</p>
+                                    {s.image ?
+                                    <div className='image'>
+                                        <img src={s.image.path} alt={s.image.text}
+                                            style={setImageSize(s.image.scale)}
+                                        />
+                                        <p>{s.image.text}</p>
+                                    </div>
+                                        : 
+                                        <></>
+                                    }
                                 </div>
-                                    : 
-                                    <></>
-                                }
-                            </div>
-                        ))
-                        
+                            ))
+                            
+                        }
+                    </>
                     }
-                    <div className='end-bar'></div>
-                </div>
+                >
+                </MainContainer>
                 <NextPost nextPost={content?.next} prevPost={content?.previous}/>
-            </div>
         </>
     )
 }

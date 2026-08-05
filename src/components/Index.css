@@ -1,3 +1,14 @@
+.index-content {
+    margin: 0 15rem 0 22rem;
+}
+
+.index-list-item {
+    display: flex;
+    border-radius: 5px;
+    cursor: url('/pointer.png'), pointer !important;
+    flex-direction: column;
+}
+
 .index-entry {
     font-size: 1.8rem;
     display: flex;
@@ -15,14 +26,52 @@
     background-color: rgba(255, 255, 255, 0.08);
 }
 
-.index-list-item {
-    display: flex;
-    border-radius: 5px;
-    flex-direction: column;
+
+.index-list-item:not(:last-child)::after {
+    content: "";
+    background-color: var(--white);
+    height: 1px;
 }
 
-.index-list-item::after {
-    content: "";
-    background-color: #6c5d2d;
-    height: 1px;
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5rem 13rem 5rem 13rem;
+}
+
+.go {
+    display: flex;
+    gap: 1rem;
+    border-radius: 5px;
+    cursor: url('/pointer.png'), pointer !important;
+    transition: 0.15s background-color;
+}
+
+.go:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.hover-left, .hover-right {
+    transition: 0.15s transform;
+}
+
+.hover-right:hover {
+    transform: translateX(0.5rem)
+}
+.hover-left:hover {
+    transform: translateX(-0.5rem)
+}
+
+.go p {
+    font-size: 3rem;
+}
+
+.numbers {
+    display: flex;
+    gap: 1rem;
+}
+
+.numbers * {
+    font-size: 2rem;
 }

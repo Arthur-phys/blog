@@ -4,6 +4,7 @@ import Header from './components/Header.tsx'
 import Index from './components/Index.tsx'
 import Post  from './components/Post.tsx'
 import Sidebar from './components/Sidebar.tsx'
+import ContentContainer from './components/shared/ContentContainer.tsx'
 import { Outlet, Route, Routes } from 'react-router'
 
 
@@ -15,12 +16,12 @@ function App() {
       <div className="page">
         <Sidebar/>
         <Header/>
-        <div className='content'>
+        <ContentContainer>
           <Routes>
             <Route index element={<Post/>}/>
             <Route path='post-index' element={<Index/>}/>
           </Routes>
-        </div>
+        </ContentContainer>
         <Footer/>
       </div>
       <Outlet/>
