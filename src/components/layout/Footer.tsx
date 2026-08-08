@@ -1,6 +1,6 @@
 import "./Footer.css"
-import Github from "./Github";
-import Linkedin from "./Linkedin";
+import Github from "../Icons/Github";
+import Linkedin from "../Icons/Linkedin";
 
 export default function Footer() {
     return (<>

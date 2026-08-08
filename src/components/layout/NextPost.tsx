@@ -1,8 +1,8 @@
 import './NextPost.css'
-import AngleLeft from './AngleLeft'
-import AngleRight from './AngleRight'
+import AngleLeft from '../Icons/AngleLeft'
+import AngleRight from '../Icons/AngleRight'
 import { useSearchParams } from 'react-router'
-import type { PostOverview } from '../interfaces/post';
+import type { PostOverview } from '../../interfaces/post';
 
 
 export default function NextPost({ prevPost, nextPost }: {prevPost?: PostOverview, nextPost?: PostOverview}) {

@@ -1,10 +1,10 @@
 import './LatestPosts.css';
 import { useEffect, useState } from "react";
-import type { PostIndex } from "../interfaces/postIndex";
-import { LatestPostsService } from "../services/postService";
-import FileIcon from "./FileIcon";
+import type { PostIndex } from "../../../interfaces/postIndex";
+import { LatestPostsService } from "../../../services/postService";
+import FileIcon from "../../Icons/FileIcon";
 import { useNavigate } from 'react-router';
-import { randomColorPick } from '../utils/utils';
+import { randomColorPick } from '../../../utils/utils';
 
 export default function LatestPosts() {
 

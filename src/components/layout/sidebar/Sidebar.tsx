@@ -1,11 +1,11 @@
 import './Sidebar.css'
 import LatestPosts from './LatestPosts.tsx';
 import SearchBar from './SearchBar.tsx';
-import MenuIcon from './MenuIcon.tsx'
-import BrainIcon from './Brain.tsx';
+import MenuIcon from '../../Icons/MenuIcon.tsx'
+import BrainIcon from '../../Icons/Brain.tsx';
+import Pointer from '../../Icons/Pointer.tsx';
+import { randomColorPick } from '../../../utils/utils.ts';
 import { useEffect, useRef, useState } from 'react'
-import { randomColorPick } from '../utils/utils.ts';
-import Pointer from './Pointer.tsx';
 import { Link } from 'react-router';
 
 export default function Sidebar() {

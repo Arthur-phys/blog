@@ -1,11 +1,11 @@
 import './Post.css'
-import type { PostObject } from '../interfaces/post'
+import type { PostObject } from '../../interfaces/post'
 import { useSearchParams } from 'react-router'
 import { useEffect, useState } from 'react';
-import { PostService } from '../services/postService';
-import { randomColorPick } from '../utils/utils';
-import NextPost from './NextPost';
-import MainContainer from './shared/MainContainer';
+import { PostService } from '../../services/postService';
+import { randomColorPick } from '../../utils/utils';
+import NextPost from '../layout/NextPost';
+import MainContainer from '../layout/MainContainer';
 
 export default function Post() {
 

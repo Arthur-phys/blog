@@ -1,10 +1,10 @@
 import './App.css'
-import Footer from './components/Footer.tsx'
-import Header from './components/Header.tsx'
-import Index from './components/Index.tsx'
-import Post  from './components/Post.tsx'
-import Sidebar from './components/Sidebar.tsx'
-import ContentContainer from './components/shared/ContentContainer.tsx'
+import Footer from './components/layout/Footer.tsx'
+import Header from './components/layout/Header.tsx'
+import Index from './components/pages/Index.tsx'
+import Post  from './components/pages/Post.tsx'
+import Sidebar from './components/layout/sidebar/Sidebar.tsx'
+import ContentContainer from './components/layout/ContentContainer.tsx'
 import { Outlet, Route, Routes } from 'react-router'
 
 
