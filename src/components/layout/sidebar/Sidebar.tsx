@@ -40,7 +40,7 @@ export default function Sidebar() {
     <>
     <div className={"sidebar mobile-sidebar" + (visible ? " sidebar-visible" : "")} ref={sidebar}>   
       <div ref={rightSidebar} className="mobile-icon sidebar-icon">
-        <MenuIcon stroke='var(--white)'/>
+        <MenuIcon stroke='var(--white)' size='3.5rem' padding='0.5rem'/>
       </div>
       <div className="sidebar-content">
         <p className="sidebar-title">Menu</p>

@@ -7,12 +7,13 @@ import MainContainer from "../layout/MainContainer";
 import AngleLeft from "../Icons/AngleLeft";
 import AngleRight from "../Icons/AngleRight";
 import { useNavigate } from "react-router";
+import { randomColorPick } from "../../utils/utils";
 
 export default function Index() {
 
     const [index, setIndex] = useState<PostIndex>();
     const navigate = useNavigate();
-    const [page, _] = useState<number>(1);
+    const [page, setPage] = useState<number>(1);
 
     useEffect(() => {
         const indexGetter = async () => {
@@ -49,30 +50,40 @@ export default function Index() {
                         >
                         </MainContainer>
                             <div className="pagination">
-                                { page > 1 ?
-                                        <div className="go">
-                                            <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
-                                        </div> :
-                                        <div></div>
-                                    }
+                                <div
+                                    style={ page > 1 ? {} : {visibility: "hidden"}}
+                                    onClick={() => {setPage((page) => {
+                                        return page > 1 ? page - 1 : page;
+                                    })}}
+                                    className="go"
+                                >
+                                    <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
+                                </div>
                                 <div className="numbers">
                                     <p className="ellipsis">&hellip;</p>
                                     {
-                                        Array.from({length: index.length / 10 + 1}, (_, index) => index)
+                                        Array.from({length: (index.length / 10) + (index.length % 10 == 0 ? 0 : 1)}, (_, index) => index)
                                             .map((i) => {
-                                                return (<span className={`page-index ${page == i + 1 ? "page-index-selected" : ""}`}>
-                                                    {i+1}
-                                                </span>)
+                                                return (
+                                                    <span
+                                                        key={i}
+                                                        onClick={() => setPage(i+1)}
+                                                        style={page == i + 1 ? {color: `var(--${randomColorPick()})`} : {}}
+                                                        className={`page-index ${page == i + 1 ? "page-index-selected" : ""}`}>
+                                                            {i+1}
+                                                    </span>
+                                                )
                                         }
                                     )}
                                 <p className="ellipsis">&hellip;</p>
                                 </div>
-                                { page < (index.length / 10 ) ?
-                                    <div className="go">
+                                    <div style={ page < (index.length / 10 ) ? {} : {visibility: "hidden"} } 
+                                        onClick={() => {setPage((page) => {
+                                                return page < (index.length / 10) + 1 ? page + 1 : page;
+                                            })}}
+                                        className="go">
                                         <AngleRight stroke="var(--white)" size='4rem' padding='0.1rem'/>
-                                    </div> :
-                                    <div></div>
-                                }
+                                    </div>
                             </div>
                 </>
 

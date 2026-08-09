@@ -13,7 +13,7 @@ export default function NextPost({ prevPost, nextPost }: {prevPost?: PostOvervie
         <>
             <div className='post-navigator'>
                 {
-                    prevPost ? 
+                    prevPost && prevPost.slug != "" ? 
                     <div className="prev-post"
                         onClick={(_) => {
                                 const newParams = new URLSearchParams();
@@ -27,7 +27,7 @@ export default function NextPost({ prevPost, nextPost }: {prevPost?: PostOvervie
                         <div></div>
                 }
                 {
-                    nextPost ? 
+                    nextPost && nextPost.slug != "" ? 
                     <div className='next-post'
                         onClick={(_) => {
                             const newParams = new URLSearchParams();
