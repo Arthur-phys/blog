@@ -7,7 +7,7 @@ export async function PostService(postSlugName: string): Promise<PostObject> {
         const response = await fetch(`/posts/${postSlugName}/${postSlugName}.json`)
         postContent = await response.json();
     } catch (e) {
-        const response = await fetch(`/posts/not-found/not-found.json`)
+        const response = await fetch(`/others/not-found/not-found.json`)
         postContent = await response.json();
     }
     return postContent

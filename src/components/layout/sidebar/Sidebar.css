@@ -40,7 +40,6 @@
 .category {
     display: flex;
     flex-direction: column;
-    align-items: center;
     padding-left: 1rem;
 }
 
@@ -49,8 +48,9 @@
     width: 90%;
     background-color: var(--black-shade);
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     height: 1px;
+    align-self: center;
 }
 
 .category * {
@@ -60,58 +60,28 @@
 .category-title {
     display: flex;
     gap: 1rem;
+    justify-content: center;
     align-items: center;
     margin-bottom: 1rem;
 }
 
-.category-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    gap: 1rem;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.08);
-    padding: 0.5rem;
-    margin-left: 0.5rem;
-    border: 5px solid #00000000;
-    border-radius: 5px;
-    transition: border-color 0.15s;
-}
-
-.category-link:hover {
-    text-decoration: none;
-}
-.category-link:active {
-    text-decoration: none;
-}
-.category-link:visited {
-    text-decoration: none;
-}
-
-.category-link:hover {
-    cursor: url("/pointer.png"), pointer !important;
-}
-
-
 @media(max-width: 480px) {
 
-    .category-link {
-        width: 90%;
-    }
     .mobile-icon {
         height: 5rem !important;
         background-color: var(--black-charcoal);
         border-radius: 0 5px 5px 0;
         align-items: center;
         width: 3rem;
-        position: relative;
-        margin-top: 5rem;
+        justify-content: center;
+        display: flex;
+        position: absolute;
+        top: 5rem;
+        left: 20rem;
     }
     
     .mobile-icon::after {
         content: "";
-        clip-path: inset(0 0 0 0 round 0 8px 0 0);
         width: 3rem;
         height: 2rem;
         position: absolute;

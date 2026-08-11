@@ -7,6 +7,7 @@ import Pointer from '../../Icons/Pointer.tsx';
 import { randomColorPick } from '../../../utils/utils.ts';
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router';
+import Button from './Button.tsx';
 
 export default function Sidebar() {
 
@@ -45,12 +46,11 @@ export default function Sidebar() {
       <div className="sidebar-content">
         <p className="sidebar-title">Menu</p>
         <div className='category'>
-          <Link to={"/post-index"} className={"category-link" + ` hover-${randomColorPick()}`}>
-          <Pointer size='2.5rem' padding='0' stroke='var(--white)'/>
-          <h3>
-            Index (╭ರ_•́)
-          </h3>
-          </Link>
+          <Button
+            text="Index (╭ರ_•́)"
+            goTo='/post-index'
+            icon={<Pointer size='2rem' padding='0' stroke='var(--white)'/>}
+          />
         </div>
         <div className='category'>
           <div className='category-title'>

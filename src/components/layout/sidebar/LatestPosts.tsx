@@ -1,15 +1,13 @@
-import './LatestPosts.css';
+import "./LatestPost.css"
 import { useEffect, useState } from "react";
 import type { PostIndex } from "../../../interfaces/postIndex";
 import { LatestPostsService } from "../../../services/postService";
 import FileIcon from "../../Icons/FileIcon";
-import { useNavigate } from 'react-router';
-import { randomColorPick } from '../../../utils/utils';
+import Button from './Button';
 
 export default function LatestPosts() {
 
     const [latestPosts, setLatestPosts] = useState<PostIndex>([]);
-    const navigate = useNavigate();
 
     useEffect(() => {
     const retrieveLatestPosts = async () => {
@@ -24,14 +22,12 @@ export default function LatestPosts() {
         <ul>
             {
               latestPosts.map((post, i) => (
-                  <li key={i}>
-                    <div className={"latest-post" + ` hover-${randomColorPick()}`}
-                    onClick={(_) => {
-                        navigate(`/?post=${post.slug}`);
-                    }}
-                    >
-                      <FileIcon size='2rem' padding='0rem' stroke='var(--white)'/>{post.title}
-                    </div>
+                  <li key={i} className="latest-post">
+                    <Button
+                      goTo={`/?post=${post.slug}`}
+                      icon={<FileIcon size='2rem' padding='0rem' stroke='var(--white)'/>}
+                      text={post.title}
+                    />
                   </li>
                 )
               )
