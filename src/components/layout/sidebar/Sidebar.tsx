@@ -4,9 +4,7 @@ import SearchBar from './SearchBar.tsx';
 import MenuIcon from '../../Icons/MenuIcon.tsx'
 import BrainIcon from '../../Icons/Brain.tsx';
 import Pointer from '../../Icons/Pointer.tsx';
-import { randomColorPick } from '../../../utils/utils.ts';
 import { useEffect, useRef, useState } from 'react'
-import { Link } from 'react-router';
 import Button from './Button.tsx';
 
 export default function Sidebar() {
