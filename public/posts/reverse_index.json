@@ -1,6 +1,16 @@
 {
-   "thoughts": [
+   "programming": [
       "sicp-thoughts"
+   ],
+   "cs": [
+      "sicp-thoughts"
+   ],
+   "famous": [
+      "sicp-thoughts"
+   ],
+   "book": [
+      "sicp-thoughts",
+      "three-body-problem"
    ],
    "sicp": [
       "sicp-thoughts"
@@ -8,57 +18,17 @@
    "about": [
       "sicp-thoughts"
    ],
-   "famous": [
-      "sicp-thoughts"
-   ],
-   "cs": [
+   "thoughts": [
       "sicp-thoughts"
    ],
    "functional": [
       "sicp-thoughts"
    ],
-   "book": [
-      "sicp-thoughts",
-      "three-body-problem"
+   "cats": [
+      "welcome"
    ],
-   "programming": [
-      "sicp-thoughts"
-   ],
-   "body": [
-      "three-body-problem"
-   ],
-   "simmulating": [
-      "three-body-problem"
-   ],
-   "liu": [
-      "three-body-problem"
-   ],
-   "influence": [
-      "three-body-problem"
-   ],
-   "cixin": [
-      "three-body-problem"
-   ],
-   "gravity": [
-      "three-body-problem"
-   ],
-   "fun": [
-      "three-body-problem"
-   ],
-   "system": [
-      "three-body-problem"
-   ],
-   "under": [
-      "three-body-problem"
-   ],
-   "physics": [
-      "three-body-problem"
-   ],
-   "simmulation": [
-      "three-body-problem"
-   ],
-   "three": [
-      "three-body-problem"
+   "life": [
+      "welcome"
    ],
    "hobbies": [
       "welcome"
@@ -66,16 +36,43 @@
    "blog": [
       "welcome"
    ],
-   "me": [
-      "welcome"
-   ],
-   "life": [
-      "welcome"
-   ],
    "welcome": [
       "welcome"
    ],
-   "cats": [
-      "welcome"
+   "simulation": [
+      "three-body-problem"
+   ],
+   "system": [
+      "three-body-problem"
+   ],
+   "cixin": [
+      "three-body-problem"
+   ],
+   "influence": [
+      "three-body-problem"
+   ],
+   "simulating": [
+      "three-body-problem"
+   ],
+   "body": [
+      "three-body-problem"
+   ],
+   "gravity": [
+      "three-body-problem"
+   ],
+   "under": [
+      "three-body-problem"
+   ],
+   "liu": [
+      "three-body-problem"
+   ],
+   "fun": [
+      "three-body-problem"
+   ],
+   "physics": [
+      "three-body-problem"
+   ],
+   "three": [
+      "three-body-problem"
    ]
 }

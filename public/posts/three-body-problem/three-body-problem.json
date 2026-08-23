@@ -19,11 +19,11 @@
       ]
    },
    "previous": {
-      "slug": "",
-      "title": ""
+      "slug": "welcome",
+      "title": "Welcome to my Blog!"
    },
    "next": {
-      "slug": "welcome",
-      "title": "Welcome to my Blog! [Under Construction]"
+      "slug": "",
+      "title": ""
    }
 }
