@@ -10,6 +10,7 @@
     border-radius: 5px;
     background-color: var(--obsidian-shade);
     transition: border-color 0.15s;
+    width: 100%;
 }
 
 .simple-button:hover {

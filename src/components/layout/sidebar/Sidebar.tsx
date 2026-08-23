@@ -6,6 +6,7 @@ import BrainIcon from '../../Icons/Brain.tsx';
 import Pointer from '../../Icons/Pointer.tsx';
 import { useEffect, useRef, useState } from 'react'
 import Button from './Button.tsx';
+import SearchIcon from '../../Icons/Search.tsx';
 
 export default function Sidebar() {
 
@@ -58,6 +59,10 @@ export default function Sidebar() {
           <LatestPosts/>
         </div>
         <div className='category'>
+          <div className='category-title'>
+            <SearchIcon size='2.5rem' padding='0' stroke='var(--white)'/>
+            <h3>Search (˶ᵔᗜᵔ˶)ﾉﾞ</h3>
+          </div>
           <SearchBar/>
         </div>
       </div>

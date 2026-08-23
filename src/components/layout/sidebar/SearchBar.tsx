@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
 import "./SearchBar.css";
+import { useEffect, useState } from "react";
+import Button from "./Button";
+import Query from "../../Icons/Query";
 import { SearchService } from "../../../services/searchService";
 import { ReverseIndexService } from "../../../services/postService";
 import type { ReverseIndex } from "../../../interfaces/postIndex";
@@ -7,6 +9,7 @@ import type { ReverseIndex } from "../../../interfaces/postIndex";
 export default function SearchBar() {
 
     const [reverseIndex, setReverseIndex] = useState<ReverseIndex>({});
+    // const [debounce, setDebouce] = useState()
     const [matches, setMatches] = useState<Array<[string,number]>>();
     const [query, setQuery] = useState<string>("");
 
@@ -19,7 +22,9 @@ export default function SearchBar() {
     },[])
 
     useEffect(() => {
-        setMatches(SearchService(query,5,reverseIndex))
+        if (query && query != "") {
+            setMatches(SearchService(query,5,reverseIndex))
+        }
     },[reverseIndex,query])
 
     return (
@@ -29,8 +34,9 @@ export default function SearchBar() {
             </input>
             <ul>
                 { matches ? matches.map(entry => {
-                    return (<li>
-                        {entry[0]}
+                    return (<li className="match-entry">
+                        <Button text={entry[0]} goTo={`/?post=${entry[0]}`} 
+                        icon={<Query size='2rem' padding='0rem' stroke='var(--white)'/>}/>
                     </li>)
                 }) : <></> }
             </ul>
