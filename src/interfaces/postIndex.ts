@@ -4,4 +4,8 @@ export interface PostIndexView {
     lastModified: string
 }
 
+export interface ReverseIndex {
+    [key: string]: string[]
+}
+
 export type PostIndex = Array<PostIndexView>;

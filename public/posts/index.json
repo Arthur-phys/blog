@@ -1,17 +1,50 @@
 [
    {
+      "slug": "sicp-thoughts",
+      "title": "Thoughts About the Famous CS Book SICP",
+      "keywords": [
+         "thoughts",
+         "sicp",
+         "about",
+         "famous",
+         "cs",
+         "functional",
+         "book",
+         "programming"
+      ],
+      "lastModified": 1787429587.6416192
+   },
+   {
       "slug": "three-body-problem",
       "title": "Simmulating a Three Body System Under the Influence of Gravity",
-      "lastModified": 1784853743.6843503
+      "keywords": [
+         "body",
+         "simmulating",
+         "liu",
+         "influence",
+         "cixin",
+         "gravity",
+         "fun",
+         "system",
+         "under",
+         "physics",
+         "book",
+         "simmulation",
+         "three"
+      ],
+      "lastModified": 1787429605.1838403
    },
    {
       "slug": "welcome",
-      "title": "Welcome to my Blog! [Under Construction]",
-      "lastModified": 1784853743.6845238
-   },
-   {
-      "slug": "sicp-thoughts",
-      "title": "Thoughts About the Famous CS Book SICP",
-      "lastModified": 1785598129.2136388
+      "title": "Welcome to my Blog!",
+      "keywords": [
+         "hobbies",
+         "blog",
+         "me",
+         "life",
+         "welcome",
+         "cats"
+      ],
+      "lastModified": 1787429625.5024798
    }
 ]

@@ -1,13 +1,14 @@
 {
    "slug": "three-body-problem",
    "post": {
-      "title": "Simmulating a Three Body System Under the Influence of Gravity",
+      "title": "Simulating a Three Body System Under the Influence of Gravity",
       "keywords": [
-         "Cixin Liu",
-         "Three Body",
+         "Cixin",
+         "Liu",
+         "Book",
          "Physics",
          "Fun",
-         "Simmulation"
+         "Simulation"
       ],
       "sections": [
          {

@@ -1,4 +1,4 @@
-import type { PostIndex } from "../interfaces/postIndex"
+import type { PostIndex, ReverseIndex } from "../interfaces/postIndex"
 import type { PostObject } from "../interfaces/post";
 
 export async function PostService(postSlugName: string): Promise<PostObject> {
@@ -20,5 +20,10 @@ export async function LatestPostsService(): Promise<PostIndex> {
 
 export async function IndexService(): Promise<PostIndex> {
     const response = await fetch(`/posts/index.json`);
+    return await response.json();
+}
+
+export async function ReverseIndexService(): Promise<ReverseIndex> {
+    const response = await fetch(`/posts/reverse_index.json`);
     return await response.json();
 }
