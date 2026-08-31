@@ -27,3 +27,8 @@ export async function ReverseIndexService(): Promise<ReverseIndex> {
     const response = await fetch(`/posts/reverse_index.json`);
     return await response.json();
 }
+
+export async function SlugEntryMapService(): Promise<{[key: string]: string}> {
+    const response = await fetch(`/posts/slug_entry_map.json`);
+    return await response.json();
+}

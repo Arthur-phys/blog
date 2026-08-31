@@ -6,10 +6,22 @@ import Post  from './components/pages/Post.tsx'
 import Sidebar from './components/layout/sidebar/Sidebar.tsx'
 import ContentContainer from './components/layout/ContentContainer.tsx'
 import { Outlet, Route, Routes } from 'react-router'
+import { useEffect } from 'react'
+import { SlugEntryMapService } from './services/postService.ts'
 
 
 
 function App() {
+
+  useEffect(() => {
+    async function retrieveMap() {
+      const conversionMap = await SlugEntryMapService();
+      Object.entries(conversionMap).forEach(([key, val]) => {
+        window.localStorage.setItem(key,val);
+      })
+    }
+    retrieveMap()
+  },[])
 
   return (
     <>
