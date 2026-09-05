@@ -50,15 +50,19 @@ export default function Index() {
                         >
                         </MainContainer>
                             <div className="pagination">
-                                <div
-                                    style={ page > 1 ? {} : {visibility: "hidden"}}
-                                    onClick={() => {setPage((page) => {
-                                        return page > 1 ? page - 1 : page;
-                                    })}}
-                                    className="go"
-                                >
-                                    <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
-                                </div>
+                                {
+                                    page > 1 ? 
+                                    <div
+                                        onClick={() => {setPage((page) => {
+                                            return page > 1 ? page - 1 : page;
+                                        })}}
+                                        className="go"
+                                    >
+                                        <AngleLeft stroke="var(--white)" size='4rem' padding='0.1rem'/>
+                                    </div>
+                                    : 
+                                    <></>
+                                }
                                 <div className="numbers">
                                     <p className="ellipsis">&hellip;</p>
                                     {
@@ -77,13 +81,18 @@ export default function Index() {
                                     )}
                                 <p className="ellipsis">&hellip;</p>
                                 </div>
-                                    <div style={ page < (index.length / 10 ) ? {} : {visibility: "hidden"} } 
-                                        onClick={() => {setPage((page) => {
-                                                return page < (index.length / 10) + 1 ? page + 1 : page;
-                                            })}}
-                                        className="go">
-                                        <AngleRight stroke="var(--white)" size='4rem' padding='0.1rem'/>
-                                    </div>
+                                {
+                                    page < (index.length / 10 ) ? 
+                                        <div
+                                            onClick={() => {setPage((page) => {
+                                                    return page < (index.length / 10) + 1 ? page + 1 : page;
+                                                })}}
+                                            className="go">
+                                            <AngleRight stroke="var(--white)" size='4rem' padding='0.1rem'/>
+                                        </div>
+                                    : 
+                                    <></>
+                                }
                             </div>
                 </>
 

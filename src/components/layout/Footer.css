@@ -2,13 +2,47 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
     margin-bottom: 2rem;
     margin-top: 3rem;
 }
 
 .icon-wrapper {
     transition: 0.15s transform;
+    position: relative;
+}
+
+.wave {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 3.2rem);
+    left: calc(50% - 3.2rem);
+    border-radius: 50%;
+    background-color: var(--white);
+    width: 6.4rem;
+    height: 6.4rem;
+    transform: scale(0.25);
+    transition: transform 0.8s, background-color 0.4s 0.4s;
+    visibility: hidden;
+}
+
+.wave::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: calc(50% - 2.6rem);
+    left: calc(50% - 2.6rem);
+    border-radius: 50%;
+    background-color: var(--purple-background);
+    width: 5.2rem;
+    height: 5.2rem;
+}
+
+.wave-animation {
+    visibility: visible !important;
+    transform: scale(1);
+    background-color: #e8e7e900;
 }
 
 .icon-wrapper:hover {

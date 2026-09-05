@@ -6,7 +6,7 @@ import Post  from './components/pages/Post.tsx'
 import Sidebar from './components/layout/sidebar/Sidebar.tsx'
 import ContentContainer from './components/layout/ContentContainer.tsx'
 import { Outlet, Route, Routes } from 'react-router'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { SlugEntryMapService } from './services/postService.ts'
 
 
@@ -22,19 +22,20 @@ function App() {
     }
     retrieveMap()
   },[])
+  const [waveEffect, setWaveEffect] = useState<boolean>(false) 
 
   return (
     <>
       <div className="page">
         <Sidebar/>
-        <Header/>
+        <Header setWaveEffect={setWaveEffect}/>
         <ContentContainer>
           <Routes>
             <Route index element={<Post/>}/>
             <Route path='post-index' element={<Index/>}/>
           </Routes>
         </ContentContainer>
-        <Footer/>
+        <Footer activateWave={waveEffect}/>
       </div>
       <Outlet/>
     </>

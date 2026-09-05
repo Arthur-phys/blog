@@ -1,9 +1,10 @@
 import "./Header.css";
 
-export default function Header() {
+export default function Header({setWaveEffect}: {setWaveEffect: Function}) {
 
     function scrollBottom() {
         window.scrollTo({top: document.body.scrollHeight, behavior: "smooth"})
+        setTimeout(() => setWaveEffect((last: boolean) => !last),500)
     }
 
     return (
