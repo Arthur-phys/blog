@@ -6,8 +6,9 @@ export interface Image {
 
 export interface Section {
     title: string,
-    text: string,
-    image: Image,
+    text: string[],
+    list?: string[]
+    image?: Image,
 }
 
 export interface PostDetails {

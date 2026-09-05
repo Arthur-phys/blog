@@ -13,17 +13,19 @@
       "sections": [
          {
             "title": "Background",
-            "text": "some background",
+            "text": [
+               "some background"
+            ],
             "image": ""
          }
       ]
    },
    "previous": {
-      "slug": "welcome",
-      "title": "Welcome to my Blog!"
-   },
-   "next": {
       "slug": "",
       "title": ""
+   },
+   "next": {
+      "slug": "welcome",
+      "title": "Welcome to my Blog!"
    }
 }

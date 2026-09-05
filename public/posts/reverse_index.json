@@ -1,28 +1,43 @@
 {
-   "programming": [
-      "sicp-thoughts"
+   "simulation": [
+      "three-body-problem"
    ],
-   "cs": [
-      "sicp-thoughts"
+   "physics": [
+      "three-body-problem"
    ],
-   "famous": [
-      "sicp-thoughts"
+   "body": [
+      "three-body-problem"
+   ],
+   "simulating": [
+      "three-body-problem"
+   ],
+   "under": [
+      "three-body-problem"
+   ],
+   "fun": [
+      "three-body-problem"
+   ],
+   "influence": [
+      "three-body-problem"
    ],
    "book": [
       "sicp-thoughts",
       "three-body-problem"
    ],
-   "sicp": [
-      "sicp-thoughts"
+   "system": [
+      "three-body-problem"
    ],
-   "about": [
-      "sicp-thoughts"
+   "liu": [
+      "three-body-problem"
    ],
-   "thoughts": [
-      "sicp-thoughts"
+   "three": [
+      "three-body-problem"
    ],
-   "functional": [
-      "sicp-thoughts"
+   "cixin": [
+      "three-body-problem"
+   ],
+   "gravity": [
+      "three-body-problem"
    ],
    "cats": [
       "welcome"
@@ -30,49 +45,37 @@
    "life": [
       "welcome"
    ],
-   "hobbies": [
+   "blog": [
       "welcome"
    ],
-   "blog": [
+   "hobbies": [
       "welcome"
    ],
    "welcome": [
       "welcome"
    ],
-   "simulation": [
-      "three-body-problem"
+   "programming": [
+      "sicp-thoughts"
    ],
-   "system": [
-      "three-body-problem"
+   "thoughts": [
+      "sicp-thoughts"
    ],
-   "cixin": [
-      "three-body-problem"
+   "kingdom": [
+      "sicp-thoughts"
    ],
-   "influence": [
-      "three-body-problem"
+   "cs": [
+      "sicp-thoughts"
    ],
-   "simulating": [
-      "three-body-problem"
+   "sky": [
+      "sicp-thoughts"
    ],
-   "body": [
-      "three-body-problem"
+   "sicp": [
+      "sicp-thoughts"
    ],
-   "gravity": [
-      "three-body-problem"
+   "fairytale": [
+      "sicp-thoughts"
    ],
-   "under": [
-      "three-body-problem"
-   ],
-   "liu": [
-      "three-body-problem"
-   ],
-   "fun": [
-      "three-body-problem"
-   ],
-   "physics": [
-      "three-body-problem"
-   ],
-   "three": [
-      "three-body-problem"
+   "functional": [
+      "sicp-thoughts"
    ]
 }

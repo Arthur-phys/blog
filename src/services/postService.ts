@@ -10,6 +10,7 @@ export async function PostService(postSlugName: string): Promise<PostObject> {
         const response = await fetch(`/others/not-found/not-found.json`)
         postContent = await response.json();
     }
+    console.log(postContent)
     return postContent
 }
 
